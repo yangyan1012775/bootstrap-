@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>折叠</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+
+            <h2 class="page-header">折叠</h2>
+            <button class="btn btn-success" data-target="#mydata" data-toggle="collapse">收起</button>
+            <div class="collapse in" id="mydata">
+                昨天。。。。。。。<br>
+                昨天《《《《《《《
+            </div>
+            <button class="btn btn-success" data-target="#data" data-toggle="collapse">展开</button>
+            <div class="collapse " id="data">
+                昨天。。。。。。。<br>
+                昨天《《《《《《《
+            </div>
+
+
+
+            <h2 class="page-header">列表折叠<small>只允许显示一项</small></h2>
+            <!--这个id的作用相当于单选框的id值，使折叠卡同一时间只能显示一项-->
+            <div class="panel-group" id="zdk">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#wx" data-toggle="collapse" data-parent="#zdk">吴昕</a>
+                        </div>
+                    </div>
+                    <div class="panel-collapse collapse" id="wx">
+                        <div class="panel-body collapse in">
+                            《我们相爱吧》
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#pwb" data-toggle="collapse" data-parent="#zdk">潘玮柏</a>
+                        </div>
+                    </div>
+                    <div class="panel-collapse collapse " id="pwb">
+                        <div class="panel-body  collpase in">
+                            潘玮柏成功求爱成功
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-1"></div>
+
+    </div>
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
